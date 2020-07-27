@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:theme="@android:style/Widget.ListView.White"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_button"
+        android:onClick="playIT"
+        android:text="@string/greet_me"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.128" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="139dp"
+        android:layout_height="35dp"
+        android:fontFamily="@font/alegreya_sans_medium_italic"
+        android:text="@string/good_morning_to_world"
+        android:textColor="#FA074309"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#3F0F47"
+        android:textColorLink="#9C27B0"
+        android:textIsSelectable="false"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        android:typeface="sans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.121" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="391dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="356dp"
+        android:fontFamily="sans-serif-condensed"
+        android:hapticFeedbackEnabled="false"
+        android:text="@string/a_dream_doesn_t_become_reality_through_magic_it_takes_sweat_determination_and_hard_work"
+        android:textAlignment="center"
+        android:textColor="#F2221F1F"
+        android:textColorHighlight="#353131"
+        android:textColorLink="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.hsalf.smilerating.SmileRating
+        android:id="@+id/smile_rating"
+        android:layout_width="380dp"
+        android:layout_height="88dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.944" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
